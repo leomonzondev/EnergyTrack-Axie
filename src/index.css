@@ -1,13 +1,305 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Bowlby One SC', sans-serif;
+  color: white;
+  -moz-user-select:none;
+  user-select:none;
+}
+
+
+
+
+
+/*COUNTER*/
+/*COUNTER*/
+/*COUNTER*/
+
+.rounds {
+  margin-top: 5px;
+  margin-right: 5px;
+  font-size: 38px;
+  text-shadow: 5px 4px 1px #9b8027;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(../src/images/backgroundblur.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.counter__gral {
+  text-align: center;
+  height: 920px;
+  width: 800px;
+}
+
+
+
+
+.tableroo {
+  background: url(../src/images/TABLERO.png) ;
+  background-size: 800px 920px;
+  background-position: cover;
+}
+
+/*ENERGY*/
+/*ENERGY*/
+/*ENERGY*/
+
+.ball__container {
+  margin-bottom: -20px;
+}
+
+.reflect {
+  position: absolute;
+  margin-left: 290px;
+  margin-top: 80px;
+  z-index: 1;
+}
+
+.reflect img {
+  width: 50px ;
+  opacity: 0.8;
+}
+
+.energy {
+  height: 270px;
+  width: 270px;
+  margin-top: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.energy h1 {
+  text-align: center;
+  font-size: 140px;
+  position: absolute;
+  display: flex;
+  justify-self: center;
+  margin-left: 514px;
+  margin-top: 35px;
+  text-shadow: 5px 4px 1px #af7a18;
+  word-spacing: -8px;
+}
+
+.energy img {
+  width: 100%;
+  height: 100%;
+  margin-left:520px ;
+}
+
+
+
+/*BUTTONS*/
+/*BUTTONS*/
+/*BUTTONS*/
+
+button {
+  border: 5px solid #5e340c;
+  border-radius: 20px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+button:active {
+  box-shadow: inset 0 0 100px 100px rgba(224, 224, 224, 0.3);
+}
+
+.btn__counter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 200px;
+  width: 400px;
+
+}
+
+.btn__counter button {
+  padding: 0 61px 0 61px;
+}
+  
+
+.btn__sus {
+  background-color: #dd1155;
+  text-shadow: 5px 4px 1px #b62958;
+  font-size: 90px;
+}
+
+
+
+.btn__plus {
+  background-color: #00b1cb;
+  text-shadow: 5px 4px 1px #2391a1;
+  font-size: 90px;
+}
+
+
+
+
+.btn__end {
+  width: 400px;
+  margin-top: 20px;
+  font-size: 40px;
+  padding: 20px 30px;
+  text-shadow: 5px 4px 1px #417209;
+  margin-bottom: 20px;
+  background-color: #5f9e0c;
+  margin-left: 50px;
+}
+
+.btn__extra {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+}
+
+.btn__undo {
+  /* position: absolute;
+  margin-top: -103px;
+  right: 150px; */
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-self:center;
+  position: absolute;
+  margin-left: 460px;
+}
+
+.btn__undo img {
+  width:40px;
+  padding:10px ;
+}
+
+
+.btn__reset {
+  background-color: #743aad; /*772ec0*/
+  text-shadow: 5px 4px 1px #532086;
+  width: 400px;
+  font-size: 40px;
+  padding: 20px 30px;
+}
+
+
+@media (max-width: 375px) {
+
+  .counter {
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    border: 3px solid #5e340c;
+
+
+  }
+
+
+  .rounds {
+    margin-top: 15px;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .counter__gral {
+    height: 600px;
+    width: 355px;
+  }
+
+  .tableroo {
+    background: url(../src/images/TABLERO.png) no-repeat ;
+    background-size: 356px 550px;
+  }
+
+  /*ENERGY*/
+  .energy  {
+    height: 170px;
+    width: 170px ;
+    margin-left: -165px;
+  }
+
+  .reflect img {
+    width: 30px;
+    margin-left: -330px;
+    margin-top: -10px;
+  }
+
+  .energy h1 {
+    margin-top: 20px;
+    font-size: 90px;
+
+  }
+  .btn__counter button {
+    padding: 0 27px 0 27px;
+    font-size: 50px;
+
+  }
+
+
+
+  .btn__counter {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto -10px auto;
+    
+  }
+
+  .btn__sus {
+
+  }
+
+  .btn__plus {
+
+  }
+
+  .btn__extra {
+    width: 220px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn__end {
+    width: 180px;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+
+  .btn__reset {
+    width: 180px;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  .btn__undo img {
+    width: 20px;
+    padding: 3px;
+  }
+
+  .btn__undo {
+    /* margin-top: -52px;
+    right: 53px;
+     */
+    display: flex;
+    align-self:center;
+    position: absolute;
+    margin-left: 205px;
+  }
+
 }
