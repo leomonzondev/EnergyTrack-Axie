@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/energy/static/css/main.106fa0c3.css",
+    "main.js": "/energy/static/js/main.20ada454.js",
+    "static/media/energy.png": "/energy/static/media/energy.1c342cf54cf8312bf2fc.png",
+    "static/media/backgroundblur.jpg": "/energy/static/media/backgroundblur.4e978650bcf3dedc5060.jpg",
+    "static/media/TABLERO.png": "/energy/static/media/TABLERO.c223260e3125e5887844.png",
+    "index.html": "/energy/index.html",
+    "main.106fa0c3.css.map": "/energy/static/css/main.106fa0c3.css.map",
+    "main.20ada454.js.map": "/energy/static/js/main.20ada454.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.106fa0c3.css",
+    "static/js/main.20ada454.js"
+  ]
+}
