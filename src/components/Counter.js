@@ -52,19 +52,14 @@ export const Counter = () => {
         setRound(1)
         setCount(3)
     } else if (round >= 10) {
-        // const bloodText = styled.body`
-        // color:#ad013a`
-        
-        // const bloodBack = [
-        //     {
-        //         background
-        //     }
-        // ]
+        document.getElementById('#root').style.backgroundColor="red"
     }
 
 
     return (
         <div className='counter'>
+            <div className='blood'>
+
             
             <div className='tableroo'>
 
@@ -97,6 +92,7 @@ export const Counter = () => {
                         </div>
                     </div>
 
+            </div>
             </div>
         </div>
     )
